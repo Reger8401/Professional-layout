@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container-baner {
+    max-width: 1600px;
+    display: flex;
+    margin: auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+.headers {
+
+    background-color: #cccccc;
+    height: 100px;
+
+}
+
+nav {
+    background: #222222;
+}
+
+.menu {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.left-menu {
+
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    margin-top: 15px;
+    width: 35px;
+    height: 30px;
+}
+
+.nav-menu {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.picmenu {
+    width: 30px;
+    height: 70%;
+}
+
+.banner {
+    width: 50%;
+    height: 100%;
+}
+
+.banner-pic {
+
+    background-image: url(./img/fashin.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+
+
+}
+
+.banner-block {
+    //padding-top: 20px;
+    display: flex;
+    background-color: #F1E4E6;
+    height: 764px;
+}
+
+.brand {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #222222;
+}
+
+.fashion {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 58px;
+
+    color: #222222;
+}
+
+.banner-text {
+    display: flex;
+    margin-top: 20%;
+    height: 200px;
+}
+
+.line-banner {
+    margin-left: 120px;
+    margin-top: 5px;
+    height: 100px;
+    width: 10px;
+    //position: absolute;
+    left: 54%;
+    right: 45.25%;
+    top: 9.53%;
+    bottom: 88.06%;
+
+    background: #F16D7F;
+}
+
+.banner-article {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.article-banner {
+    margin-left: 10px;
+}
+
+.fashionred {
+    color: #F16D7F;
+}
+
+content {
+    display: block;
+    padding-top: 65px;
+}
+
+.product-items,
+.product-items2 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
