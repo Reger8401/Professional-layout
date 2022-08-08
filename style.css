@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container-baner {
@@ -10,6 +10,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
+}
+
+.footer {
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -34,8 +39,8 @@ nav {
   display: flex;
   margin: auto;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .left-menu {
@@ -45,7 +50,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .logo {
@@ -63,7 +68,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .picmenu {
@@ -152,8 +157,180 @@ content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+.box-product-item {
+  width: 360px;
+  height: 580;
+}
+
+img.picproduct {
+  width: 360px;
+  height: 420;
+}
+
+h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #222222;
+}
+
+h2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #FBFBFB;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 13px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #000000;
+}
+
+p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+h1.fetured {
+  text-align: center;
+}
+
+p.text-product-item {
+  text-align: center;
+}
+
+p.price {
+  margin-top: 18px;
+  color: #F16D7F;
+}
+
+.box-product {
+  margin-top: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-next-btn {
+  width: 215px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 95px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  cursor: pointer;
+  color: #F26376;
+  background-color: #ffffff;
+  border: 1px solid #F26376;
+}
+
+.product-next-btn:hover {
+  color: #ffffff;
+  border: 1px solid #F26376;
+  background-color: #F26376;
+  -webkit-box-shadow: 2px 2px 20px #AFE9FF;
+          box-shadow: 2px 2px 20px #AFE9FF;
+}
+
+button.product-next-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.prefooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #222224;
+}
+
+.actions {
+  margin-top: 105px;
+  margin-bottom: 105px;
+  text-align: center;
+  width: 360px;
+  height: 135px;
+}
+
+.picarticle-footer {
+  margin-bottom: 28px;
+  width: 45px;
+  height: 32px;
+}
+
+p.article-prefooter {
+  margin-top: 16px;
+  margin-bottom: 105px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.footer-form {
+  background-image: url("/img/form-footer.jpg");
+  height: 450px;
+}
+
+.copyright {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80px;
+  background: #222224;
+}
+
+p.text-copiriht {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
 /*# sourceMappingURL=style.css.map */
