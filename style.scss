@@ -164,8 +164,6 @@ img.picproduct {
     height: 420;
 }
 
-.box-product {}
-
 h1 {
     font-family: 'Lato';
     font-style: normal;
@@ -307,7 +305,6 @@ p.article-prefooter {
 }
 
 .footer-form {
-    //background-image: url('/img/form-footer.jpg');
     background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('/img/form-footer.jpg');
     height: 450px;
 }
@@ -447,7 +444,6 @@ p.text-copiriht {
     background-color: #F26376;
 }
 
-//__________________________________________________________
 
 
 .menubtn {
@@ -522,8 +518,5 @@ p.text-copiriht {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
-
-
     color: #6F6E6E;
 }
