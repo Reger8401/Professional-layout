@@ -102,7 +102,7 @@ nav {
 }
 
 .brand {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -111,7 +111,7 @@ nav {
 }
 
 .fashion {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -171,13 +171,17 @@ content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background-color: #F8F8F8;
+  margin-bottom: 30px;
   width: 360px;
   height: 580;
 }
 
-.add-btn {
-  display: block;
+.box-product-item:hover .add-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .box-product-link:hover,
@@ -192,7 +196,7 @@ img.picproduct {
 }
 
 h1 {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -202,7 +206,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19.96px;
@@ -214,7 +218,7 @@ h2 {
 h3 {
   margin-top: 25px;
   margin-bottom: 13px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -224,7 +228,7 @@ h3 {
 }
 
 p {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -250,6 +254,8 @@ p.price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -264,12 +270,39 @@ p.price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 118px;
-  top: 50px;
-  width: 140px;
-  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
   padding: 8px;
-  border: 1px solid black;
+  border: 1px solid white;
+  pointer-events: all;
+}
+
+.add:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #F1E4E6;
+          box-shadow: 0px 0px 10px 0px #F1E4E6;
+}
+
+.add-desc {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.add-box {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 188px;
+  pointer-events: none;
 }
 
 .add-pic {
@@ -290,7 +323,7 @@ p.price {
   height: 50px;
   margin-top: 50px;
   margin-bottom: 95px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -341,7 +374,7 @@ button.product-next-btn {
 p.article-prefooter {
   margin-top: 16px;
   margin-bottom: 105px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -367,7 +400,7 @@ p.article-prefooter {
 }
 
 .article-reviews {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -388,7 +421,7 @@ p.article-prefooter {
 }
 
 p.text-copiriht {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -411,7 +444,7 @@ p.text-copiriht {
 }
 
 .subscribe {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -500,6 +533,7 @@ p.text-copiriht {
 
 .social-link:hover {
   background-color: #F26376;
+  color: #f1f1f1;
 }
 
 .menubtn {
@@ -543,7 +577,7 @@ p.text-copiriht {
 .menu-cont {
   margin-left: 34px;
   margin-right: 143px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -553,7 +587,7 @@ p.text-copiriht {
 
 .menu_product {
   margin-left: 15px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -564,7 +598,7 @@ p.text-copiriht {
 .menu_link {
   margin-left: 54.5px;
   margin-right: 98px;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -575,5 +609,9 @@ p.text-copiriht {
 .preFooter-article {
   width: 100%;
   background-color: #ffffff;
+}
+
+.picsocial-footer {
+  color: #222224;
 }
 /*# sourceMappingURL=style.css.map */
