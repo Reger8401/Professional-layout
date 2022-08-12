@@ -6,13 +6,13 @@
 }
 
 .container-baner {
-    max-width: 1600px;
+    width: 100%;
     display: flex;
     margin: auto;
 }
 
 .footer {
-    max-width: 1600px;
+    width: 1600px;
     margin: auto;
 }
 
@@ -23,10 +23,13 @@
 }
 
 .headers {
-
-    background-color: #cccccc;
     height: 100px;
+}
 
+.boxWidw {
+    background-color: #F1E4E6;
+    width: 100%;
+    height: 764px;
 }
 
 nav {
@@ -87,6 +90,7 @@ nav {
     //padding-top: 20px;
     display: flex;
     background-color: #F1E4E6;
+    max-width: 1600px;
     height: 764px;
 }
 
@@ -155,8 +159,19 @@ content {
 }
 
 .box-product-item {
+   display: flex;
+    background-color: #F8F8F8;
     width: 360px;
     height: 580;
+}
+
+.add-btn{
+display:block;
+}
+
+.box-product-link:hover,
+.picproduct {
+    filter: brightness(80%);
 }
 
 img.picproduct {
@@ -234,6 +249,28 @@ p.price {
     justify-content: space-between;
 }
 
+.box-product-link {
+    display: block;
+    text-decoration: none;
+}
+
+.add {
+    display: flex;
+   // position: absolute;
+    left: 118px;
+    top: 50px;
+width: 140px;
+height: 45px;
+
+
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.add-pic{
+    width: 25px;
+}
+
 .btn-next {
     display: flex;
     justify-content: center;
@@ -304,10 +341,9 @@ p.article-prefooter {
     color: #FBFBFB;
 }
 
-.footer-form {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('/img/form-footer.jpg');
-    height: 450px;
-}
+// .footer-form {
+
+// }
 
 .footer-form {
     display: flex;
@@ -357,6 +393,13 @@ p.text-copiriht {
     padding: 0;
     margin-top: 105px;
     text-align: center;
+}
+
+.preFooter-article {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('/img/form-footer.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .subscribe {
@@ -423,6 +466,11 @@ p.text-copiriht {
     background: #E1E1E1;
 }
 
+.footer {
+    background-color: #222224;
+    width: 100%;
+}
+
 .form-mail-group .btn-form-footer {
     position: relative;
 }
@@ -485,10 +533,6 @@ p.text-copiriht {
     display: block;
 }
 
-.menudown:hover .menubtn {
-    color: #F26376;
-}
-
 .menu-cont {
     margin-left: 34px;
     margin-right: 143px;
@@ -519,4 +563,9 @@ p.text-copiriht {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+}
+
+.preFooter-article {
+    width: 100%;
+    background-color: #ffffff;
 }

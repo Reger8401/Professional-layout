@@ -6,7 +6,7 @@
 }
 
 .container-baner {
-  max-width: 1600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .footer {
-  max-width: 1600px;
+  width: 1600px;
   margin: auto;
 }
 
@@ -24,8 +24,13 @@
 }
 
 .headers {
-  background-color: #cccccc;
   height: 100px;
+}
+
+.boxWidw {
+  background-color: #F1E4E6;
+  width: 100%;
+  height: 764px;
 }
 
 nav {
@@ -92,6 +97,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   background-color: #F1E4E6;
+  max-width: 1600px;
   height: 764px;
 }
 
@@ -162,8 +168,22 @@ content {
 }
 
 .box-product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F8F8F8;
   width: 360px;
   height: 580;
+}
+
+.add-btn {
+  display: block;
+}
+
+.box-product-link:hover,
+.picproduct {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 img.picproduct {
@@ -233,6 +253,27 @@ p.price {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.box-product-link {
+  display: block;
+  text-decoration: none;
+}
+
+.add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 118px;
+  top: 50px;
+  width: 140px;
+  height: 45px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.add-pic {
+  width: 25px;
 }
 
 .btn-next {
@@ -310,12 +351,6 @@ p.article-prefooter {
 }
 
 .footer-form {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.78)), to(rgba(255, 255, 255, 0.78))), url("/img/form-footer.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("/img/form-footer.jpg");
-  height: 450px;
-}
-
-.footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,6 +400,14 @@ p.text-copiriht {
   padding: 0;
   margin-top: 105px;
   text-align: center;
+}
+
+.preFooter-article {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.78)), to(rgba(255, 255, 255, 0.78))), url("/img/form-footer.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("/img/form-footer.jpg");
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .subscribe {
@@ -431,6 +474,11 @@ p.text-copiriht {
   background: #E1E1E1;
 }
 
+.footer {
+  background-color: #222224;
+  width: 100%;
+}
+
 .form-mail-group .btn-form-footer {
   position: relative;
 }
@@ -492,10 +540,6 @@ p.text-copiriht {
   display: block;
 }
 
-.menudown:hover .menubtn {
-  color: #F26376;
-}
-
 .menu-cont {
   margin-left: 34px;
   margin-right: 143px;
@@ -526,5 +570,10 @@ p.text-copiriht {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+.preFooter-article {
+  width: 100%;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
