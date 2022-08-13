@@ -1,3 +1,10 @@
+$colorframe1: #F16D7F;
+$colorframe2: #F26376;
+$colorframe3: #222224;
+$colorframe4: #222222;
+$widwContBar1: 1600px;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@
 }
 
 .footer {
-    width: 1600px;
+    width: $widwContBar1;
     margin: auto;
 }
 
@@ -45,7 +52,7 @@
 }
 
 nav {
-    background: #222222;
+    background: $colorframe4;
 }
 
 .menu {
@@ -90,19 +97,15 @@ nav {
 }
 
 .banner-pic {
-
     background-image: url(./img/fashin.png);
     background-size: auto;
     background-repeat: no-repeat;
-
-
 }
 
 .banner-block {
     display: flex;
-
     background-color: #F1E4E6;
-    max-width: 1600px;
+    max-width: $widwContBar1;
     height: 764px;
 }
 
@@ -110,7 +113,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #F7F7F7;
-    max-width: 1600px;
+    max-width: $widwContBar1;
     height: 764px;
 }
 
@@ -127,7 +130,7 @@ nav {
 }
 
 .slider:hover .fa-solid {
-    color: #F16D7F;
+    color: $colorframe1;
 }
 
 
@@ -143,7 +146,7 @@ nav {
     font-size: 48px;
     line-height: 58px;
 
-    color: #222222;
+    color: $colorframe4;
 }
 
 .fashion {
@@ -153,7 +156,7 @@ nav {
     font-size: 28px;
     line-height: 58px;
 
-    color: #222222;
+    color: $colorframe4;
 }
 
 .banner-text {
@@ -167,13 +170,11 @@ nav {
     margin-top: 5px;
     height: 100px;
     width: 10px;
-    //position: absolute;
     left: 54%;
     right: 45.25%;
     top: 9.53%;
     bottom: 88.06%;
-
-    background: #F16D7F;
+    background: $colorframe1;
 }
 
 .banner-article {
@@ -185,7 +186,7 @@ nav {
 }
 
 .fashionred {
-    color: #F16D7F;
+    color: $colorframe1;
 }
 
 content {
@@ -214,7 +215,7 @@ content {
 
 .box-product-link:hover,
 .picproduct {
-    filter: brightness(30%);
+    filter: brightness(80%);
 }
 
 img.picproduct {
@@ -231,7 +232,7 @@ h1 {
     /* identical to box height */
 
 
-    color: #222222;
+    color: $colorframe4;
 }
 
 h2 {
@@ -254,9 +255,6 @@ h3 {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    /* identical to box height */
-
-
     color: #000000;
 }
 
@@ -267,7 +265,6 @@ p {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-
     color: #5D5D5D;
 }
 
@@ -281,12 +278,11 @@ h1.fetured {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-
-    color: #F16D7F;
+    color: $colorframe1;
 }
 
 .hr-singl1 {
-    background: #EF5B70;
+    background: $colorframe1;
     margin: auto;
     width: 64px;
     height: 3px;
@@ -309,7 +305,6 @@ h1.fetured {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-
     width: 555px;
     text-align: center;
     color: #5E5E5E;
@@ -365,7 +360,7 @@ p.text-product-item {
 
 p.price {
     margin-top: 18px;
-    color: #F16D7F;
+    color: $colorframe1;
 }
 
 .box-product {
@@ -434,19 +429,19 @@ p.price {
     font-size: 16px;
     line-height: 19px;
 
-    color: #F26376;
+    color: $colorframe2;
     cursor: pointer;
-    color: #F26376;
+    color: $colorframe2;
     background-color: #ffffff;
-    border: 1px solid #F26376;
+    border: 1px solid $colorframe2;
 
 
 }
 
 .product-next-btn:hover {
     color: #ffffff;
-    border: 1px solid #F26376;
-    background-color: #F26376;
+    border: 1px solid $colorframe2;
+    background-color: $colorframe2;
     box-shadow: 2px 2px 20px #AFE9FF;
 }
 
@@ -458,7 +453,7 @@ button.product-next-btn {
 .prefooter {
     display: flex;
     justify-content: space-around;
-    background: #222224;
+    background: $colorframe3;
 }
 
 .actions {
@@ -520,7 +515,7 @@ p.article-prefooter {
     line-height: 24px;
     text-align: center;
 
-    color: #222224;
+    color: $colorframe3;
 }
 
 .copyright {
@@ -528,7 +523,7 @@ p.article-prefooter {
     display: flex;
     justify-content: space-around;
     height: 80px;
-    background: #222224;
+    background: $colorframe3;
 }
 
 p.text-copiriht {
@@ -555,18 +550,13 @@ p.text-copiriht {
 }
 
 .subscribe {
-
     font-family: 'Lato', sans-serif;
-    ;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 167.2%;
-    /* or 40px */
-
     text-align: center;
-
-    color: #222224;
+    color: $colorframe3;
 }
 
 .promotion {
@@ -588,8 +578,8 @@ p.text-copiriht {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    background-color: #F26376;
-    border: 1px solid #F26376;
+    background-color: $colorframe2;
+    border: 1px solid $colorframe2;
     padding: .375rem .75rem;
     font-size: 1rem;
     border-top-right-radius: 2rem;
@@ -599,8 +589,7 @@ p.text-copiriht {
 
 .btn-form-footer:hover {
     background-color: #ffffff;
-    color: #F26376;
-
+    color: $colorframe2;
 }
 
 .form-mail-group .text-field-input {
@@ -620,7 +609,7 @@ p.text-copiriht {
 }
 
 .footer {
-    background-color: #222224;
+    background-color: $colorframe3;
     width: 100%;
 }
 
@@ -642,18 +631,15 @@ p.text-copiriht {
 }
 
 .social-link:hover {
-    background-color: #F26376;
+    background-color: $colorframe2;
 }
-
 
 .social-link:hover .picsocial-footer {
     color: #f1f1f1;
 }
 
-
-
 .menubtn {
-    background-color: #222224;
+    background-color: $colorframe3;
     color: white;
     padding: 3px;
     font-size: 16px;
@@ -709,7 +695,7 @@ p.text-copiriht {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #F16D7F;
+    color: $colorframe1;
 }
 
 .menu_link {
@@ -729,7 +715,7 @@ p.text-copiriht {
 }
 
 .picsocial-footer {
-    color: #222224;
+    color: $colorframe3;
 }
 
 .sids-cont {
@@ -739,7 +725,7 @@ p.text-copiriht {
 }
 
 .h2sids {
-    color: #F16D7F;
+    color: $colorframe1;
     margin-top: 60px;
     margin-bottom: 60px;
     font-family: 'Lato';
@@ -747,8 +733,6 @@ p.text-copiriht {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-
-
 }
 
 .link-sides {
@@ -764,7 +748,6 @@ p.text-copiriht {
     text-decoration: none;
 }
 
-
 .link-sids {
     font-family: 'Lato';
     font-style: normal;
@@ -775,6 +758,6 @@ p.text-copiriht {
 }
 
 .link-sids:hover {
-    color: #F16D7F;
+    color: $colorframe1;
     font-weight: bolder;
 }

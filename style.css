@@ -234,8 +234,8 @@ content {
 
 .box-product-link:hover,
 .picproduct {
-  -webkit-filter: brightness(30%);
-          filter: brightness(30%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 img.picproduct {
@@ -271,7 +271,6 @@ h3 {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -298,7 +297,7 @@ h1.fetured {
 }
 
 .hr-singl1 {
-  background: #EF5B70;
+  background: #F16D7F;
   margin: auto;
   width: 64px;
   height: 3px;
@@ -592,7 +591,6 @@ p.text-copiriht {
   font-weight: 700;
   font-size: 24px;
   line-height: 167.2%;
-  /* or 40px */
   text-align: center;
   color: #222224;
 }
