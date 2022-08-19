@@ -168,7 +168,15 @@ nav {
     width: 360px;
 }
 
+.accordion{
+    width: 360px;
+}
 
+
+.accordion-header{
+    display: flex;
+    justify-content:left;
+}
 
 .article-banner {
     margin-left: 10px;
