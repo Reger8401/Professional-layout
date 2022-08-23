@@ -164,18 +164,20 @@ nav {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.accordion-item, .poduct-filter{
+.accordion-item,
+.poduct-filter {
     width: 360px;
 }
 
-.accordion{
-    width: 360px;
-}
-
-
-.accordion-header{
+.accordion {
     display: flex;
-    justify-content:left;
+    position: absolute;
+    width: 360px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: left;
 }
 
 .article-banner {
@@ -196,6 +198,8 @@ content {
     display: flex;
     justify-content: space-between;
 }
+
+@import '_menuFilter';
 
 .product-items,
 .product-items2 {
@@ -646,7 +650,8 @@ p.text-copiriht {
     color: #f1f1f1;
 }
 
-.menubtn {
+.menubtn,
+.menubtnFiltr {
     background-color: $colorframe3;
     color: white;
     padding: 3px;
@@ -654,11 +659,12 @@ p.text-copiriht {
     border: none;
 }
 
-.menudown {
+.menudown,
+.menudownFiltr {
     position: relative;
     display: inline-block;
-
 }
+
 
 .menu-content {
     display: none;
@@ -667,10 +673,34 @@ p.text-copiriht {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+}
 
+.menu-contentFiltr {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.detailsFiles:open>summary::after {
+    width: 15%;
+    display: block;
+    position: absolute;
+    background-color: white;
+    //z-index: 10000;
+    //   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.menu-contentFiltr a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -681,7 +711,16 @@ p.text-copiriht {
     background-color: #ddd;
 }
 
+.menu-contentFiltr a:hover {
+    background-color: #ddd;
+}
+
+
 .menudown:hover .menu-content {
+    display: block;
+}
+
+.menudownFiltr:hover .menu-contentFiltr {
     display: block;
 }
 
@@ -707,8 +746,7 @@ p.text-copiriht {
 }
 
 .menu_link {
-    margin-left: 54.5px;
-    margin-right: 98px;
+    text-align: left;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -716,6 +754,10 @@ p.text-copiriht {
     line-height: 17px;
     color: #6F6E6E;
 }
+
+
+
+
 
 .preFooter-article {
     width: 100%;

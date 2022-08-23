@@ -1,0 +1,205 @@
+$menuOnOf: none;
+
+.headfilter {
+    display: flex;
+    border: 1px solid rgb(233, 232, 232);
+}
+
+.lineFilter {
+    background-color: $colorframe1;
+
+    width: 5px;
+}
+
+.bg-one,
+.bg-one~.content span {
+    background-color: #f8f6f898;
+
+}
+
+.bg-two,
+.bg-two~.content span {
+    background-color: #f2f1f5;
+
+    margin-left: 5px;
+}
+
+.bg-three,
+.bg-three~.content span {
+    background-color: #f4f1f5;
+    margin-left: 5px;
+}
+
+.tabs-box {
+    background-color: #f4f4f5;
+    color: rgb(15, 15, 15);
+    width: 360px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.tabs-box .acord {
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs-box .acord label {
+    position: relative;
+    z-index: 1000;
+    display: block;
+    padding: 0 40px 0 0;
+}
+
+.tabs-box .acord label i {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    text-align: center;
+}
+
+.tabs-box .acord label,
+.tabs-box .acord label i,
+.tabs-box .acord i.fa-chevron-circle-down {
+    height: 40px;
+    line-height: 40px;
+}
+
+.tabs-box .acord i.fa-chevron-circle-down {
+    position: absolute;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    width: 40px;
+    text-align: center;
+    -moz-transition: all 0.05s linear 0s;
+    -webkit-transition: all 0.05s linear 0s;
+    transition: all 0.05s linear 0s;
+}
+
+.tabs-box .acord input {
+    display: none;
+}
+
+.tabs-box .content {
+    position: relative;
+    overflow: hidden;
+    -moz-transition: height 0.5s linear 0s;
+    -webkit-transition: height 0.5s linear 0s;
+    transition: height 0.5s linear 0s;
+    height: 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.tabs-box .content span.square {
+    left: 10px;
+    top: -17px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.tabs-box input[type="checkbox"]:checked~div.content {
+    height: 255px;
+    padding: 10px;
+}
+
+.tabs-box input[type="checkbox"]:checked~i.fa-chevron-circle-down {
+    transform: rotate(180deg);
+}
+
+.tabs-box {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+}
+
+.Basicfont {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+.menubtnFilter {
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+}
+
+.menudownFilter {
+    position: relative;
+    display: inline-block;
+}
+
+.picmenu {
+    margin-top: -5px;
+    width: 17px;
+}
+
+.menu-contentFilter {
+    display: $menuOnOf;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+.menu-contentFiletr a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.content-Filter {
+    text-decoration-style: none;
+}
+
+.menu-contentFilter a:hover {
+    background-color: #ddd;
+}
+
+.menudownFilter:hover .menu-contentFilter {
+    display: block;
+}
+
+.menu-cont {
+    margin-left: 34px;
+    margin-right: 143px;
+    @extend .Basicfont;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.menu_product {
+    margin-left: 15px;
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorframe1;
+}
+
+.menu_link {
+    text-decoration: none;
+    margin-left: 30px;
+    text-align: left;
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.menu_link:hover {
+    color: $colorframe1;
+}
