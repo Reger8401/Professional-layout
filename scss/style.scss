@@ -225,7 +225,7 @@ content {
     justify-content: space-between;
     background-color: #F8F8F8;
     margin-bottom: 30px;
-    width: 100%;
+    width: 655px;
     height: 305px;
 }
 
@@ -430,7 +430,7 @@ p.price {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
 }
 
@@ -443,6 +443,9 @@ p.price {
     pointer-events: none;
 }
 
+.Sprice {
+    color: $colorframe1;
+}
 
 .add-pic {
     width: 25px;
