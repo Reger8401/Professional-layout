@@ -123,8 +123,7 @@ nav {
 }
 
 .brand {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -133,8 +132,7 @@ nav {
 }
 
 .fashion {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 500;
     font-size: 28px;
     line-height: 58px;
@@ -216,6 +214,22 @@ content {
     width: 360px;
 }
 
+.box-cart {
+    max-width: 650px;
+    height: 305px;
+}
+
+
+.box-product-item-cart {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 305px;
+}
+
+
 .box-product-item:hover .add-box {
     display: flex;
 }
@@ -227,12 +241,21 @@ content {
 
 img.picproduct {
     width: 360px;
-    height: 420;
+    height: 420px;
 }
 
+.picproduct-cart {
+    width: 265px;
+
+}
+
+.text-box-product {
+    padding-left: 30px;
+}
+
+
 h1 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
@@ -243,8 +266,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 19.96px;
     line-height: 24px;
@@ -257,8 +279,7 @@ h2 {
 h3 {
     margin-top: 25px;
     margin-bottom: 13px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -267,8 +288,7 @@ h3 {
 
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -280,8 +300,7 @@ h1.fetured {
 }
 
 .article-singl3 {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -296,8 +315,7 @@ h1.fetured {
 }
 
 .article-singl2 {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -307,8 +325,7 @@ h1.fetured {
 }
 
 .articlesing {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -320,8 +337,7 @@ h1.fetured {
 }
 
 .price-singl {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -351,9 +367,9 @@ h1.fetured {
     width: 375px;
 }
 
+
 .details {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -370,6 +386,12 @@ p.price {
     color: $colorframe1;
 }
 
+
+.content-cart {
+    display: flex;
+    justify-content: space-around;
+}
+
 .box-product {
     margin-top: 47px;
     display: flex;
@@ -381,6 +403,12 @@ p.price {
     display: block;
     text-decoration: none;
 }
+
+.box-product-link-cart {
+    display: flex;
+    text-decoration: none;
+}
+
 
 .add {
     display: flex;
@@ -397,12 +425,12 @@ p.price {
 }
 
 .add-desc {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -425,13 +453,16 @@ p.price {
     justify-content: center;
 }
 
+.forma-cart {
+    padding-left: 130px;
+}
+
 .product-next-btn {
     width: 215px;
     height: 50px;
     margin-top: 50px;
     margin-bottom: 95px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -480,8 +511,7 @@ button.product-next-btn {
 p.article-prefooter {
     margin-top: 16px;
     margin-bottom: 105px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 13.972px;
     line-height: 17px;
@@ -520,8 +550,7 @@ p.article-prefooter {
 }
 
 .article-reviews {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -539,8 +568,7 @@ p.article-prefooter {
 }
 
 p.text-copiriht {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -562,8 +590,7 @@ p.text-copiriht {
 }
 
 .subscribe {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 700;
     font-size: 24px;
     line-height: 167.2%;
@@ -696,8 +723,6 @@ p.text-copiriht {
     display: block;
     position: absolute;
     background-color: white;
-    //z-index: 10000;
-    //   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
 
 .menu-contentFiltr a {
@@ -724,41 +749,6 @@ p.text-copiriht {
     display: block;
 }
 
-.menu-cont {
-    margin-left: 34px;
-    margin-right: 143px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-
-.menu_product {
-    margin-left: 15px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorframe1;
-}
-
-.menu_link {
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-}
-
-
-
-
-
 .preFooter-article {
     width: 100%;
     background-color: #ffffff;
@@ -778,8 +768,7 @@ p.text-copiriht {
     color: $colorframe1;
     margin-top: 60px;
     margin-bottom: 60px;
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -799,8 +788,7 @@ p.text-copiriht {
 }
 
 .link-sids {
-    font-family: 'Lato';
-    font-style: normal;
+    @extend .Basicfont;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
