@@ -1,0 +1,64 @@
+$colorframe1: #F16D7F;
+$colorframe2: #F26376;
+$colorframe3: #222224;
+$colorframe4: #222222;
+$widwContBar1: 1600px;
+
+
+.margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Basicfont {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+summary {
+    display: block;
+}
+
+summary::after {
+    // content: '\02C5';
+    content: url(../img/bottomvect.png);
+    margin-left: 0.4em;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+details[open]>summary::after {
+    //content: '\02C4';
+    content: url(../img/bottomvect.png);
+}
+
+// .detailsFiltr {
+//     display: block;
+//     font-family: 'Lato';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 17px;
+
+// }
+
+// .detailsFiltr::after {
+//     // content: '\02C5';
+//     content: url(../img/filter.svg);
+//     margin-left: 0.4em;
+//     font-size: 18px;
+//     font-weight: 800;
+// }
+
+.color-detFiltr[open]>summary::after {
+    //content: '\02C4';
+    content: url(../img/filter.svg);
+}
