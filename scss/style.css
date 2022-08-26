@@ -7,7 +7,7 @@
   margin-right: auto;
 }
 
-.Basicfont, .h2sids-reg, .h3form-text-reg, .form-text-reg, .regist_form_text, .input-reg, .txt_under_submit, .brand, .fashion, .choose_blok_option, .detText, .menu-cont, .menu_product, .menu_link, .cart-box-cart, .cart_box_text, h1, h2, h3, p, .article-singl3, .article-singl2, .articlesing, .price-singl, .details, .add-desc, .btn, .product-next-btn, .page-item, p.article-prefooter, .article-reviews, p.text-copiriht, .subscribe, .h2sids, .link-sids {
+.Basicfont, .h2sids-reg, .h3form-text-reg, .form-text-reg, .regist_form_text, .input-reg, .txt_under_submit, .brand, .fashion, .choose_blok_option, .detText, .basket, .menu-cont, .menu_product, .menu_link, .cart-box-cart, .cart_box_text, h1, h2, h3, p, .article-singl3, .article-singl2, .articlesing, .price-singl, .details, .add-desc, .btn, .product-next-btn, .page-item, p.article-prefooter, .article-reviews, p.text-copiriht, .subscribe, .h2sids, .link-sids {
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
@@ -735,6 +735,15 @@ content {
   padding-top: 65px;
 }
 
+.basket {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  width: 360px;
+  color: #4A4A4A;
+  background: #F5F3F3;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,7 +872,7 @@ content {
   left: 0px;
 }
 
-.Basicfont, .h2sids-reg, .h3form-text-reg, .form-text-reg, .regist_form_text, .input-reg, .txt_under_submit, .brand, .fashion, .choose_blok_option, .detText, .menu-cont, .menu_product, .menu_link, .cart-box-cart, .cart_box_text, h1, h2, h3, p, .article-singl3, .article-singl2, .articlesing, .price-singl, .details, .add-desc, .btn, .product-next-btn, .page-item, p.article-prefooter, .article-reviews, p.text-copiriht, .subscribe, .h2sids, .link-sids {
+.Basicfont, .h2sids-reg, .h3form-text-reg, .form-text-reg, .regist_form_text, .input-reg, .txt_under_submit, .brand, .fashion, .choose_blok_option, .detText, .basket, .menu-cont, .menu_product, .menu_link, .cart-box-cart, .cart_box_text, h1, h2, h3, p, .article-singl3, .article-singl2, .articlesing, .price-singl, .details, .add-desc, .btn, .product-next-btn, .page-item, p.article-prefooter, .article-reviews, p.text-copiriht, .subscribe, .h2sids, .link-sids {
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
@@ -1167,7 +1176,7 @@ p.text-product-item {
   text-align: center;
 }
 
-p.price {
+.price {
   margin-top: 18px;
   color: #F16D7F;
 }
@@ -1227,8 +1236,10 @@ p.price {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
-  margin-top: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .add-box {
@@ -1250,13 +1261,18 @@ p.price {
   width: 25px;
 }
 
-.btn-next {
+.btn-next,
+.btn--cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn--cart {
+  margin-top: 20px;
 }
 
 .forma-cart {
@@ -1294,8 +1310,61 @@ p.price {
   border: 1px solid #6d6c6c;
 }
 
+.reg-btn_cart {
+  width: 40%;
+  height: 50px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #858585;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #6d6c6c;
+}
+
+.cart-btn {
+  width: 77%;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #F16D7F;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #F16D7F;
+}
+
+.basket {
+  padding: 1px;
+  text-align: right;
+}
+
+.cart-line {
+  max-width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #636263;
+}
+
+.pricesub {
+  margin-top: 40px;
+  margin-right: 35px;
+}
+
+.price_sub {
+  margin-top: 12px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
 .product-next-btn:hover,
-.reg-btn:hover {
+.reg-btn:hover,
+.reg-btn_cart:hover,
+.cart-btn:hover {
   color: #ffffff;
   border: 1px solid #F26376;
   background-color: #F26376;
@@ -1519,7 +1588,7 @@ p.text-copiriht {
 
 .social-link {
   margin: 1px;
-  padding-top: 8px;
+  padding-top: 6%;
   background: #FFFFFF;
   width: 32px;
   height: 32px;

@@ -326,6 +326,17 @@ content {
     padding-top: 65px;
 }
 
+.basket {
+    @extend .Basicfont;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    width: 360px;
+    color: #4A4A4A;
+    background: #F5F3F3;
+
+}
+
 
 .filter {
     display: flex;
@@ -354,7 +365,6 @@ content {
     max-width: 650px;
     height: 305px;
 }
-
 
 .box-product-item-cart {
     display: flex;
@@ -414,8 +424,6 @@ img.picproduct {
     padding-left: 30px;
 }
 
-
-
 .quantity {
     display: flex;
 }
@@ -449,7 +457,7 @@ h2 {
     font-weight: 400;
     font-size: 19.96px;
     line-height: 24px;
-    
+
 }
 
 h3 {
@@ -557,7 +565,7 @@ p.text-product-item {
     text-align: center;
 }
 
-p.price {
+.price {
     margin-top: 18px;
     color: $colorframe1;
 }
@@ -606,8 +614,10 @@ p.price {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    margin-top: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .add-box {
@@ -627,9 +637,15 @@ p.price {
     width: 25px;
 }
 
-.btn-next {
+.btn-next,
+.btn--cart {
     display: flex;
     justify-content: center;
+}
+
+.btn--cart {
+    margin-top: 20px;
+
 }
 
 .forma-cart {
@@ -671,8 +687,66 @@ p.price {
     border: 1px solid #6d6c6c;
 }
 
+.reg-btn_cart {
+    width: 40%;
+    height: 50px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #858585;
+    cursor: pointer;
+
+    background-color: #ffffff;
+    border: 1px solid #6d6c6c;
+}
+
+.cart-btn {
+    width: 77%;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $colorframe1;
+    cursor: pointer;
+
+    background-color: #ffffff;
+    border: 1px solid $colorframe1;
+}
+
+.basket {
+    padding: 1px;
+    text-align: right;
+}
+
+
+.cart-line {
+
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #636263;
+}
+
+.pricesub {
+    margin-top: 40px;
+    margin-right: 35px;
+}
+
+.price_sub {
+    margin-top: 12px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+
 .product-next-btn:hover,
-.reg-btn:hover {
+.reg-btn:hover,
+.reg-btn_cart:hover,
+.cart-btn:hover {
     color: #ffffff;
     border: 1px solid $colorframe2;
     background-color: $colorframe2;
@@ -892,7 +966,8 @@ p.text-copiriht {
 
 .social-link {
     margin: 1px;
-    padding-top: 8px;
+    padding-top:6%;
+
     background: #FFFFFF;
     width: 32px;
     height: 32px;
