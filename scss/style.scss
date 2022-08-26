@@ -1,5 +1,6 @@
 @import '_func.scss';
 
+
 .container-baner {
     width: 100%;
     display: flex;
@@ -12,14 +13,129 @@
 
 }
 
-.headers {
+.header {
     position: relative;
-    height: 100px;
+    background-color: $colorfon;
+    height: 100%;
+}
+
+
+
+.label-reg {
+    margin-top: 20px;
+}
+
+.blok-btn {
+    display: flex;
+    justify-content: space-between;
 }
 
 .content-product {
     position: relative;
     margin-top: -120px;
+}
+
+.sids-cont {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F1E4E6;
+}
+
+.sids-cont-reg {
+    margin-top: 0;
+    display: flex;
+    justify-content: left;
+    height: 148px;
+    line-height: 148px;
+    background-color: #F1E4E6;
+}
+
+.h2sids-reg {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: $colorframe1;
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.h3form-text-reg {
+    @extend .Basicfont;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.form-text-reg {
+    @extend .Basicfont;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+
+.regist_form_box {
+    max-width: 360px;
+}
+
+
+
+.regist_form_text {
+    @extend .Basicfont;
+    max-width: 650px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.regist_form_box_input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label-reg,
+.label-regtop {
+    display: block;
+    width: 100%;
+    height: 45px;
+}
+
+.input-reg {
+    width: 100%;
+    height: 100%;
+    @extend .Basicfont;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 10px;
+    border: 1px solid rgba(164, 164, 164, 1);
+}
+
+.txt_under_submit {
+    @extend .Basicfont;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.label_radio {
+    display: flex;
+    margin-left: 20px;
+}
+
+.radio_button {
+    display: flex;
+}
+
+.radio_txt {
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .boxWidw {
@@ -190,7 +306,8 @@ nav {
     padding-top: 7px;
     padding-right: 30px;
 }
-.detText{
+
+.detText {
     @extend .Basicfont;
     padding-left: 10px;
     color: #6F6E6E;
@@ -246,8 +363,25 @@ content {
     margin-bottom: 30px;
     width: 655px;
     height: 305px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
+.cart-box-cart {
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+
+.cart_box_text {
+    padding-top: 40px;
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
 
 .box-product-item:hover .add-box {
     display: flex;
@@ -257,6 +391,14 @@ content {
 .picproduct {
     filter: brightness(80%);
 }
+
+
+
+.box-product-link-cart:hover,
+.picproduct {
+    filter: brightness(80%);
+}
+
 
 img.picproduct {
     width: 360px;
@@ -272,6 +414,24 @@ img.picproduct {
     padding-left: 30px;
 }
 
+
+
+.quantity {
+    display: flex;
+}
+
+
+.formQuan {
+    margin-top: 6px;
+}
+
+.form-cart {
+    background: #FFFFFF;
+    outline: 0 !important;
+    border: 0;
+    width: 30px;
+    margin-left: 5px;
+}
 
 h1 {
     @extend .Basicfont;
@@ -289,10 +449,7 @@ h2 {
     font-weight: 400;
     font-size: 19.96px;
     line-height: 24px;
-    /* identical to box height */
-
-
-    color: #FBFBFB;
+    
 }
 
 h3 {
@@ -479,26 +636,43 @@ p.price {
     padding-left: 130px;
 }
 
+.btn {
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorframe2;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid $colorframe2;
+}
+
+
 .product-next-btn {
     width: 215px;
     height: 50px;
     margin-top: 50px;
     margin-bottom: 95px;
-    @extend .Basicfont;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: $colorframe2;
-    cursor: pointer;
-    color: $colorframe2;
-    background-color: #ffffff;
-    border: 1px solid $colorframe2;
-
-
+    @extend .btn;
 }
 
-.product-next-btn:hover {
+.reg-btn {
+    width: 100%;
+    height: 50px;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #858585;
+    cursor: pointer;
+
+    background-color: #ffffff;
+    border: 1px solid #6d6c6c;
+}
+
+.product-next-btn:hover,
+.reg-btn:hover {
     color: #ffffff;
     border: 1px solid $colorframe2;
     background-color: $colorframe2;
@@ -530,12 +704,12 @@ button.product-next-btn {
     color: $colorfont1;
 }
 
-.page-link:focus{
-        z-index: 3;
-        color: $colorFont2;
-        background-color: $colorframe1;
-        outline: 0;
-        box-shadow: none;
+.page-link:focus {
+    z-index: 3;
+    color: $colorFont2;
+    background-color: $colorframe1;
+    outline: 0;
+    box-shadow: none;
 }
 
 
@@ -698,7 +872,7 @@ p.text-copiriht {
 .text-field-input {
     padding-left: 22px;
     outline: 0 !important;
-    border: 1px solid #b9b8b8;
+    border: 0;
     background: #E1E1E1;
 }
 
@@ -813,12 +987,6 @@ p.text-copiriht {
     color: $colorframe3;
 }
 
-.sids-cont {
-    display: flex;
-    justify-content: space-around;
-    background-color: #F1E4E6;
-}
-
 .h2sids {
     color: $colorframe1;
     margin-top: 60px;
@@ -829,7 +997,9 @@ p.text-copiriht {
     line-height: 29px;
 }
 
-.pagination{
+
+
+.pagination {
     --bs-pagination-border-width: none;
 }
 
@@ -858,3 +1028,5 @@ p.text-copiriht {
     color: $colorframe1;
     font-weight: bolder;
 }
+
+@import '_footer.scss';

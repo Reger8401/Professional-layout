@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f17161e574.js" crossorigin="anonymous"></script>
-    <title>SHOPPING CART</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>Sing product</title>
 </head>
 
 <body>
@@ -49,92 +55,49 @@
                                 <a class="menu_link" href="#">Bags</a>
                             </div>
                         </div>
-                        <a href="./registr.html" class="lk-link">
+                        <a href="#" class="lk-link">
                             <img class="lk picmenu" src="../img/lk.svg" alt="piclc">
                         </a>
-                        <a href="#">
+                        <a href="./cart.html">
                             <img class="basket picmenu" src="../img/basket.svg" alt="picbasket">
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="sids-cont">
-            <h2 class="h2sids">SHOPPING CART</h2>
-            <div class="link-sides">
-                <a href="../index.html" class="link-sid">
-                    <p class="link-sids">HOME</p>
-                </a>
-                <p class="singl-link"> / </p>
-                <a href="./catalog.html" class="link-sid">
-                    <p class="link-sids">MEN</p>
-                </a>
-                <p class="singl-link"> / </p>
-                <a href="#" class="link-sid sing-page-product">
-                    <p class="link-sids">SHOPPING CART</p>
-                </a>
-            </div>
+        <div class="sids-cont-reg container">
+            <h2 class="h2sids-reg">NEW ARRIVALS</h2>
         </div>
-    </header>
-    <content class="content-cart container">
-        <div class="box_cart">
-            <div class="box-product-item-cart">
-                <a href="./singl-page.html" class="box-product-link-cart">
-                    <img class="picproduct-cart" src="../img/Rectangle16.png" alt="picproduct">
-                    <div class="text-box-product">
-                        <h3 class="cart-box-cart">MANGO PEOPLE<br>T-SHIRT</h3>
-                        <div class="cart_box_text">
-                            <p>Price: <span class="Sprice">$300</span> </p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl</p>
-                            <div class="quantity">
-                                <p class="formQuan">Quantity:</p>
-                                <form><input class="form-cart" type="number" min="1" value="1"></form>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="box-product-item-cart">
-                <a href="./singl-page.html" class="box-product-link-cart">
-                    <img class="picproduct-cart" src="../img/Image222.png" alt="picproduct">
-                    <div class="text-box-product">
-                        <h3 class="cart-box-cart">MANGO PEOPLE<br>T-SHIRT</h3>
-                        <div class="cart_box_text">
-                            <p>Price: <span class="Sprice">$300</span> </p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl</p>
-                            <div class="quantity">
-                                <p class="formQuan">Quantity:</p>
-                                <form><input class="form-cart" type="number" min="1" value="1"></form>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="blok-btn">
-                <div class="btn-next">
-                    <button class="reg-btn">
-                        CLEAR SHOPPING CART</button>
-                </div>
-                <div class="btn-next">
-                    <button class="reg-btn">
-                        CONTINUE SHOPPING </button>
-                </div>
-            </div>
 
-        </div>
-        <form class="forma-cart">
-            <h2 class="colorText1">SHIPPING ADRESS</h2>
+    </header>
+    <content class="content container">
+        <div class="regist_form regist_form_box_input">
+            <form action="#" class="regist_form_box">
                 <p class="regist_form_box_input_text"> Your Name </p>
                 <label class="label-regtop" for="first_name"><input class="input-reg" type="text"
                         placeholder="First  Name"></label><br>
-                <label class="label-reg" for="first_name"><input class="input-reg" type="text" placeholder="Last  Name"></label>
-                
+                <label class="label-reg" for="first_name"><input class="input-reg" type="text"
+                        placeholder="Last  Name"></label>
+                <div class="radio_button">
+                    <label class="label_radio" for="Radiobutton"><input name="sex" class="input_radio" type="radio"
+                            value="man">
+                        <p class="radio_txt">male</p>
+                    </label>
+                    <label class="label_radio" for="Radiobutton"><input name="sex" class="input_radio" type="radio"
+                            value="woman">
+                        <p class="radio_txt">female</p>
+                    </label>
+                    <label class="label_radio" for="Radiobutton"><input name="sex" class="input_radio" type="radio"
+                            value="woman">
+                        <p class="radio_txt">Other</p>
+                    </label>
+                </div>
                 <p class="login_txt">Login details</p>
-                <label class="label-regtop" for="mail"><input class="input-reg" type="email" placeholder="Email"></label><br>
-                <label class="label-reg" for="mail"><input class="input-reg" type="password" placeholder="Password"></label>
-            
+                <label class="label-regtop" for="mail"><input class="input-reg" type="email"
+                        placeholder="Email"></label><br>
+                <label class="label-reg" for="mail"><input class="input-reg" type="password"
+                        placeholder="Password"></label>
+
                 <p class="txt_under_submit">Please use 8 or more characters, with at least 1 number and a mixture of
                     uppercase and lowercase
                     letters</p>
@@ -142,14 +105,29 @@
                     <button class="reg-btn ">
                         JOIN NOW <i class="fa fa-solid fa-arrow-right"></i></button>
                 </div>
-
-            <div class="btn-next">
-                <button class="product-next-btn">
-                    PROCEED TO CHECKOUT</button>
+            </form>
+            <div class="regist_form_text">
+                <h3 class="h3form-text-reg">LOYALTY HAS ITS PERKS</h3>
+                <p class="form-text-reg">Get in on the loyalty program where you can earn points
+                    and
+                    unlock serious perks. Starting with these as soon as you
+                    join:
+                </p>
+                <p class="form-text-reg"><i class="fa fa-solid fa-check"></i> 15% off welcome
+                    offer</p>
+                <p class="form-text-reg"><i class="fa fa-solid fa-check"></i> Free shipping, returns and exchanges on
+                    all orders
+                    offer</p>
+                <p class="form-text-reg"><i class="fa fa-solid fa-check"></i> $10 off a purchase on your birthday
+                    offer</p>
+                <p class="form-text-reg"><i class="fa fa-solid fa-check"></i> Early access to products
+                    offer</p>
+                <p class="form-text-reg"><i class="fa fa-solid fa-check"></i> Exclusive offers & rewards
+                </p>
             </div>
-        </form>
-    </content>
+        </div>
 
+    </content>
     <footer class="footer">
         <div class="prefooter container">
             <div class="actions">
