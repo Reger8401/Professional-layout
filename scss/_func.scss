@@ -1,0 +1,117 @@
+$colorframe1: #F16D7F;
+$colorframe2: #F26376;
+$colorframe3: #222224;
+$colorframe4: #222222;
+$colorframe5: #ffffff;
+$colorframe6: #F8F3F4;
+$colorfon: #F1E4E6;
+$colorfont1: #F16D7F;
+$colorFont2: #5E5E5E;
+$widwContBar1: 1600px;
+
+.body {
+    background-color: $colorframe6;
+}
+
+.margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Basicfont {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@import '_anim.scss';
+
+.slit-in-vertical {
+    -webkit-animation: slit-in-vertical 1.45s ease-out both;
+    animation: slit-in-vertical 1.45s ease-out both;
+}
+
+.fade-in-bck {
+    -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.puff-in-right {
+    -webkit-animation: puff-in-right 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .1s both;
+    animation: puff-in-right 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .1s both;
+}
+
+.puff-in-top {
+    -webkit-animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .3s both;
+    animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .3s both;
+}
+
+.puff-in-left {
+    -webkit-animation: puff-in-left 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .6s both;
+    animation: puff-in-left 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) .6s both;
+}
+
+
+
+.scale-in-ver-top {
+    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .9s both;
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .9s both;
+}
+
+.flip-in-hor-bottom {
+    -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .9s both;
+    animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .9s both;
+}
+
+.kenburns-top {
+    -webkit-animation: kenburns-top 5s ease-out both;
+    animation: kenburns-top 5s ease-out both;
+}
+
+summary {
+    display: block;
+}
+
+summary::after {
+    // content: '\02C5';
+    content: url(../img/bottomvect.png);
+    margin-left: 0.4em;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+details[open]>summary::after {
+    //content: '\02C4';
+    content: url(../img/bottomvect.png);
+}
+
+.detailsFiltr {
+    display: block;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.detailsFiltr::after {
+    // content: '\02C5';
+    content: url(../img/filter.svg);
+    margin-left: 0.4em;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.color-detFiltr[open]>summary::after {
+    //content: '\02C4';
+    content: url(../img/filter.svg);
+}
