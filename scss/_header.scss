@@ -1,3 +1,5 @@
+@import '_func.scss';
+
 .header {
     position: relative;
     background-color: $colorfon;
@@ -7,8 +9,6 @@
 nav {
     background: $colorframe4;
 }
-
-
 
 .boxWidw {
     background-color: #F1E4E6;
@@ -22,20 +22,24 @@ nav {
 }
 
 .boxWidw-product {
+    display: flex;
+    justify-content: center;
     background-color: #F7F7F7;
-    width: 100%;
+    width: $widwContBar1;
     height: 774px;
 }
 
 .container-baner {
     width: 100%;
     display: flex;
-    margin: auto;
+    justify-content: space-between;
+
 }
 
 .banner-pic {
     display: block;
     max-width: 50%;
+
     @media only screen and (max-width: 768px) {
         display: none;
     }
@@ -75,7 +79,7 @@ nav {
 
 
 .menu {
-    width: 1000px;
+    width: 1140px;
     display: flex;
     margin: auto;
     justify-content: space-between;

@@ -656,20 +656,6 @@ nav {
   color: #222222;
 }
 
-.offers {
-  max-width: 1140px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (47%)[2];
-      grid-template-rows: repeat(2, 47%);
-  -ms-grid-columns: (32%)[3];
-      grid-template-columns: repeat(3, 32%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-gap: 25px;
-}
-
 .pic-offer {
   -o-object-fit: cover;
      object-fit: cover;

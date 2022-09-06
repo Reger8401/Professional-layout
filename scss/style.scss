@@ -132,7 +132,30 @@
     height: 774px;
 }
 
+.slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #dddddd;
+    height: 47px;
+    width: 47px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background: rgba(42, 42, 42, 0.15);
+}
 
+.slider:hover .fa-solid {
+    color: #F16D7F;
+}
+
+
+.banner-block-product {
+    max-width: $widwContBar1;
+}
 
 .fa-solid {
     margin-left: auto;
@@ -154,10 +177,11 @@
     grid-template-columns: repeat(3, 32%);
     justify-content: center;
     grid-gap: 25px;
-    @media only screen and (max-width: 425px){
+
+    @media only screen and (max-width: 425px) {
         grid-template-rows: repeat(4, 32%);
         grid-template-columns: repeat(1, 100%);
-        grid-gap:32px;
+        grid-gap: 32px;
     }
 }
 
@@ -171,32 +195,12 @@
     width: 100%;
 }
 
-// .item-0 {
-//     grid-column: 1;
-//     grid-row: 1;
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .item-1 {
-//     grid-column: 2;
-//     grid-row: 1;
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .item-2 {
-//     grid-column: 3;
-//     grid-row: 1;
-//     width: 100%;
-//     height: 100%;
-// }
-
 .item-3 {
     grid-row: 2;
     grid-column: 1/4;
     width: 100%;
-    @media only screen and (max-width: 425px){
+
+    @media only screen and (max-width: 425px) {
         grid-row: 4;
         grid-column: 1;
     }
@@ -265,6 +269,16 @@ content {
     color: #4A4A4A;
     background: #F5F3F3;
 
+}
+
+.box-product-item-cart {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    width: 655px;
+    height: 305px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
 .filter {
@@ -591,18 +605,34 @@ button.product-next-btn {
     background: $colorframe3;
 }
 
-.indent0{
+.indent0 {
     height: 0;
-    @media only screen and (max-width: 425px){
+
+    @media only screen and (max-width: 425px) {
         height: 408px;
     }
 }
+
 .indent1 {
     height: 0;
+
     @media only screen and (max-width: 425px) {
         height: 525px;
     }
 }
+
+.indent3 {
+    height: 50px;
+
+    @media only screen and (max-width: 768px) {
+        height: 60px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        height: 1050px;
+    }
+}
+
 
 p.text-copiriht {
     @extend .Basicfont;
