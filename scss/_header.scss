@@ -1,6 +1,7 @@
-.headers {
+.header {
     position: relative;
-    height: 100px;
+    background-color: $colorfon;
+    height: 100%;
 }
 
 nav {
@@ -31,6 +32,47 @@ nav {
     display: flex;
     margin: auto;
 }
+
+.banner-pic {
+    display: block;
+    max-width: 50%;
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.banner-block {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-text {
+    display: flex;
+    margin-top: 20%;
+    height: 200px;
+}
+
+.line-banner {
+    margin-left: 120px;
+    margin-top: 5px;
+    height: 100px;
+    width: 10px;
+    left: 54%;
+    right: 45.25%;
+    top: 9.53%;
+    bottom: 88.06%;
+    background: $colorframe1;
+}
+
+.banner-article {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.article-banner {
+    margin-left: 10px;
+}
+
 
 .menu {
     width: 1000px;
@@ -79,7 +121,6 @@ nav {
 .menudown {
     position: relative;
     display: inline-block;
-
 }
 
 .menu-content {
@@ -89,7 +130,6 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
 }
 
 .menu-content a {
@@ -127,11 +167,21 @@ nav {
 }
 
 .menu_link {
-    margin-left: 54.5px;
-    margin-right: 98px;
+    margin-left: auto;
+    margin-right: auto;
     @extend .Basicfont;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+}
+
+.h2sids-reg {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: $colorframe1;
+    @extend .Basicfont;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
 }

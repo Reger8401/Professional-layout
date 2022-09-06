@@ -1,6 +1,159 @@
-
-
 .content {
     min-height: calc(100vh - 527px);
+
+    @media only screen and (max-width: 768px) {
+        min-height: calc(100vh - 1033px);
+    }
 }
 
+.prefooter {
+    display: flex;
+    justify-content: space-around;
+    background: $colorframe3;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.actions {
+    margin-top: 15px;
+    margin-bottom: 105px;
+    text-align: center;
+    width: 30%;
+    height: 135px;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding-top: 70px;
+    }
+}
+
+.picarticle-footer {
+    margin-bottom: 28px;
+    width: 45px;
+    height: 32px;
+}
+
+p.article-prefooter {
+    margin: 16px auto 105px auto;
+    width: 360px;
+    @extend .Basicfont;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.picsocial-footer {
+    color: $colorframe3;
+}
+
+.article-singl-product {
+    background-color: #ffff;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    width: 1140px;
+    height: 600px;
+}
+
+.footer {
+    width: $widwContBar1;
+    margin: auto;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.reviews-form-article {
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 105px;
+    width: 28%;
+    height: 225px;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding-top: 64px;
+
+        margin-bottom: 48px;
+        align-self: center;
+    }
+}
+
+.article-reviews {
+    margin: 0;
+    @extend .Basicfont;
+    color: $colorframe3;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.footer-forma {
+    padding: 0;
+    margin-top: 105px;
+    text-align: center;
+}
+
+.preFooter-article {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url('/img/form-footer.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-form-footer {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: $colorframe2;
+    border: 1px solid $colorframe2;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn-form-footer:hover {
+    background-color: #ffffff;
+    color: $colorframe2;
+}
+
+.footer {
+    background-color: $colorframe3;
+    width: 100%;
+}
+
+.form-mail-group {
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.social-link:hover .picsocial-footer {
+    color: #f1f1f1;
+}
