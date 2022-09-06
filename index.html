@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f17161e574.js" crossorigin="anonymous"></script>
     <title>shop</title>
 </head>
 
@@ -18,44 +19,278 @@
             <div class="container-baner">
                 <div class="menu">
                     <div class="left-menu">
-                        <img class="logo" src="./img/logo.png" alt="piclogo">
+                        <a href="#" class="logo-link">
+                            <img class="logo" src="./img/logo.png" alt="piclogo">
+                        </a>
                         <img class="search nav-menu picmenu" src="./img/search.svg" alt="picsearch">
                     </div>
                     <div class="nav-menu">
-                        <img class="menu1 picmenu" src="./img/menu.svg" alt="picmenu">
-                        <img class="lk picmenu" src="./img/lk.svg" alt="piclc">
-                        <img class="basket picmenu" src="./img/basket.svg" alt="picbasket">
+                        <div class="menudown">
+                            <button class="menubtn"><img class="picmenu" src="./img/menu.svg" alt="picmenu"></button>
+                            <div class="menu-content">
+                                <h3 class="menu-cont">MENU</h3>
+                                <h5 class="menu_product">MAN</h5>
+                                <a class="menu_link" href="#">Accessories</a>
+                                <a class="menu_link" href="#">Bags</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <h5 class="menu_product">WOMAN</h5>
+                                <a class="menu_link" href="https://#">Accessories</a>
+                                <a class="menu_link" href="#">Jackets & Coats</a>
+                                <a class="menu_link" href="#">Bags</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <h5 class="menu_product">KIDS</h5>
+                                <a class="menu_link" href="#">Accessories</a>
+                                <a class="menu_link" href="#">Jackets & Coats</a>
+                                <a class="menu_link" href="#">Polos</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <a class="menu_link" href="#">Bags</a>
+                            </div>
+                        </div>
+                        <a href="./public/registr.html" class="lk-link">
+                            <img class="lk picmenu" src="./img/lk.svg" alt="piclc">
+                        </a>
+                        <a href="./public/cart.html">
+                            <img class="_basket picmenu" src="./img/basket.svg" alt="picbasket">
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container-baner  banner-block">
-            <div class="banner-pic banner">
+        <div class="boxWidw">
+            <div class="container-baner  banner-block">
+                <div class="banner-pic banner">
+                    <img src="./img/fashin.png" alt="banner-pic">
+                </div>
+                <div class="banner-text banner">
+                    <div class="line-banner">
+
+                    </div>
+                    <div class="article-banner">
+                        <p class="brand banner-article">THE BRAND</p>
+                        <p class="fashion banner-article">OF LUXERIOUS <span class="fashionred">FASHION</span></p>
+                    </div>
+                </div>
 
             </div>
-            <div class="banner-text banner">
-                <div class="line-banner">
-
-                </div>
-                <div class="article-banner">
-                    <p class="brand banner-article">THE BRAND</p>
-                    <p class="fashion banner-article">OF LUXERIOUS <span class="fashionred">FASHION</span></p>
-                </div>
-            </div>
-
         </div>
     </header>
     <content class="content container">
-        <div class="product-items">
-            <img src="./img/1-for-women.png" alt="picforWomen">
-            <img src="./img/2-for-men.png" alt="picforMen">
-            <img src="./img/3-for-kids.png" alt="picforKids">
-        </div>
-        <div class="product-items2">
-            <img src="./img/4-ACCESORIES.png" alt="picforWomen">
-        </div>
+        <div class="offers">
+            <div class="item-0">
+                <a href="#" class="product-item0">
+                    <img class="puff-in-right pic-offer" src="./img/1-for-women.png" alt="picforWomen">
+                </a>
+            </div>
+            <div class="item-1">
+                <a href="#" class="product-item1">
+                    <img class="puff-in-top pic-offer" src="./img/2-for-men.png" alt="picforMen">
+                </a>
+            </div>
+            <div class="item-2">
+                <a href="#" class="product-item2">
+                    <img class="puff-in-left pic-offer" src="./img/3-for-kids.png" alt="picforKids">
+                </a>
+            </div>
+            <div class="item-3">
+                <a href="#" class="product-item3">
+                    <img class="scale-in-ver-top pic-offer1" src="./img/4-ACCESORIES.png" alt="picforLuxTrend">
+                </a>
+            </div>
 
+        </div>
+        <div class="indent0"></div>
+        <div class="products">
+            <h1 class="fetured">Fetured Items</h1>
+            <p class="text-product-item">Shop for items based on what we featured in this week</p>
+        </div>
+        <div class="box-product">
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/Rectangle15.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p> Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/elleryX.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/Rectangle16.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/Rectangle17.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/Rectangle18.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-product-item">
+                <a href="./public/singl-page.html" class="box-product-link">
+                    <img class="picproduct flip-in-hor-bottom" src="./img/Rectangle19.png" alt="picproduct">
+                    <div class="text-box">
+                        <h3>ELLERY X M'O CAPSULE</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams
+                            up with Moda
+                            Operandi.</p>
+                        <p class="price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a class="add" href="./public/cart.html">
+                        <img class="add-pic" src="./img/basket.svg" alt="add-to-cart-pic">
+                        <p class="add-desc">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="indent1"></div>
+        <div class="btn-next">
+            <button class="product-next-btn" onclick="window.location.href ='./public/catalog.html';">Browse All
+                Product</button>
+        </div>
     </content>
+    <footer class="footer">
+        <div class="prefooter container">
+            <div class="actions">
+                <img class="picarticle-footer kenburns-top" src="./img/auto.svg" alt="actionspic">
+                <h2>Free Delivery</h2>
+                <p class="article-prefooter">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+            <div class="actions ">
+                <img class="picarticle-footer kenburns-top" src="./img/percent.png" alt="actionspic">
+                <h2>Sales & discounts</h2>
+                <p class="article-prefooter">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+            <div class="actions">
+                <img class="picarticle-footer kenburns-top" src="./img/crown.png" alt="actionspic">
+                <h2>Quality assurance</h2>
+                <p class="article-prefooter">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+        </div>
+        <div class="preFooter-article">
+            <div class="footer-form container ">
+                <div class="reviews-form-article">
+                    <img class="picreviews-footer kenburns-top" src="./img/reviews.png" alt="reviewspic">
+                    <p class="article-reviews">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum“</p>
+                </div>
+                <forma class="footer-forma">
+                    <h2 class="subscribe">SUBSCRIBE</h2><br>
+                    <h3 class="promotion">FOR OUR NEWLETTER AND PROMOTION</h3>
+                    <div class="form-mail-group">
+                        <input class="text-field-input" type="text" placeholder="Enter Your Email">
+                        <button class="btn-form-footer">Subscribe</button>
+                    </div>
+                </forma>
+            </div>
+        </div>
+        <div class="copyright container">
+            <div class="copi">
+                <p class="text-copiriht">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="socil">
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-facebook-f picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-instagram picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-pinterest-p picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-twitter picsocial-footer"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
 </body>
 
 </html>

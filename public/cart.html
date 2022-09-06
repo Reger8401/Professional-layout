@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f17161e574.js" crossorigin="anonymous"></script>
+    <title>SHOPPING CART</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="container-baner">
+                <div class="menu">
+                    <div class="left-menu">
+                        <a href="../index.html" class="logo-link">
+                            <img class="logo" src="../img/logo.png" alt="piclogo">
+                        </a>
+                        <img class="search nav-menu picmenu" src="../img/search.svg" alt="picsearch">
+                    </div>
+                    <div class="nav-menu">
+                        <div class="menudown">
+                            <button class="menubtn"><img class="picmenu" src="../img/menu.svg" alt="picmenu"></button>
+                            <div class="menu-content">
+                                <h3 class="menu-cont">MENU</h3>
+                                <h5 class="menu_product">MAN</h5>
+                                <a class="menu_link" href="#">Accessories</a>
+                                <a class="menu_link" href="#">Bags</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <h5 class="menu_product">WOMAN</h5>
+                                <a class="menu_link" href="#">Accessories</a>
+                                <a class="menu_link" href="#">Jackets & Coats</a>
+                                <a class="menu_link" href="#">Bags</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <h5 class="menu_product">KIDS</h5>
+                                <a class="menu_link" href="#">Accessories</a>
+                                <a class="menu_link" href="#">Jackets & Coats</a>
+                                <a class="menu_link" href="#">Polos</a>
+                                <a class="menu_link" href="#">Denim</a>
+                                <a class="menu_link" href="#">T-Shirts</a>
+                                <a class="menu_link" href="#">Bags</a>
+                            </div>
+                        </div>
+                        <a href="./registr.html" class="lk-link">
+                            <img class="lk picmenu" src="../img/lk.svg" alt="piclc">
+                        </a>
+                        <a href="#">
+                            <img class="_basket picmenu" src="../img/basket.svg" alt="picbasket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="sids-cont container">
+            <h2 class="h2sids">SHOPPING CART</h2>
+            
+        </div>
+    </header>
+    <content class="content-cart container">
+        <div class="box_cart">
+            <div class="box-product-item-cart">
+                <a href="./singl-page.html" class="box-product-link-cart">
+                    <img class="picproduct-cart" src="../img/Rectangle16.png" alt="picproduct">
+                    <div class="text-box-product">
+                        <h3 class="cart-box-cart">MANGO PEOPLE<br>T-SHIRT</h3>
+                        <div class="cart_box_text">
+                            <p>Price: <span class="Sprice">$300</span> </p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl</p>
+                            <div class="quantity">
+                                <p class="formQuan">Quantity:</p>
+                                <form><input class="form-cart" type="number" min="1" value="1"></form>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="box-product-item-cart">
+                <a href="./singl-page.html" class="box-product-link-cart">
+                    <img class="picproduct-cart" src="../img/Image222.png" alt="picproduct">
+                    <div class="text-box-product">
+                        <h3 class="cart-box-cart">MANGO PEOPLE<br>T-SHIRT</h3>
+                        <div class="cart_box_text">
+                            <p>Price: <span class="Sprice">$300</span> </p>
+                            <p>Color: Red</p>
+                            <p>Size: Xl</p>
+                            <div class="quantity">
+                                <p class="formQuan">Quantity:</p>
+                                <form><input class="form-cart" type="number" min="1" value="1"></form>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="blok-btn">
+                <div class="btn-next">
+                    <button class="reg-btn">
+                        CLEAR SHOPPING CART</button>
+                </div>
+                <div class="btn-next">
+                    <button class="reg-btn">
+                        CONTINUE SHOPPING </button>
+                </div>
+            </div>
+
+        </div>
+        <form class="forma-cart">
+            <h2 class="colorText1">SHIPPING ADRESS</h2>
+            <label class="label-reg" for="first_name"><input class="input-reg" type="text"
+                    placeholder="Bangladesh"></label><br>
+            <label class="label-reg" for="first_name"><input class="input-reg" type="text" placeholder="State"></label>
+
+
+            <label class="label-reg" for="text"><input class="input-reg" type="text"
+                    placeholder="Postcode / Zip"></label><br>
+
+            <div class="btn-cart_next">
+                <button class="reg-btn_cart">
+                    GET A QUOTE</button>
+            </div>
+            <div class="basket">
+                <p class="pricesub">GRAND TOTAL <span class="price-sub">$900</p>
+                <h2 class="price_sub">GRAND TOTAL <span class="price cart-price">$900</span></h2>
+                
+                <hr class="cart-line">
+                <div class="btn--cart">
+                    <button class="cart-btn">
+                        PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+
+        </form>
+    </content>
+
+    <footer class="footer">
+        
+        <div class="preFooter-article">
+            <div class="footer-form container">
+                <div class="reviews-form-article">
+                    <img class="picreviews-footer" src="../img/reviews.png" alt="reviewspic">
+                    <p class="article-reviews">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum“</p>
+                </div>
+                <forma class="footer-forma">
+                    <h2 class="subscribe">SUBSCRIBE</h2><br>
+                    <h3 class="promotion">FOR OUR NEWLETTER AND PROMOTION</h3>
+                    <div class="form-mail-group">
+                        <input class="text-field-input" type="text" placeholder="Enter Your Email">
+                        <button class="btn-form-footer">Subscribe</button>
+                    </div>
+                </forma>
+            </div>
+        </div>
+        <div class="copyright container">
+            <div class="copi">
+                <p class="text-copiriht">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="socil">
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-facebook-f picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-instagram picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-pinterest-p picsocial-footer"></i>
+                </a>
+                <a href="" class="social-link">
+                    <i class="fa fa-brands fa-twitter picsocial-footer"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
